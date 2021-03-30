@@ -32,6 +32,13 @@ h2 {
     letter-spacing: .2rem;
 }
 
+h3 {
+   font-size: 2rem;
+   font-weight: 500;
+   line-height: 2.6rem; 
+   letter-spacing: .5rem;
+}
+
 button {
     border: none;
     border-radius: 1rem;
@@ -202,6 +209,97 @@ button {
     background-image: url('/images/home/desktop/image-graphic-design.jpg');
     height: 308px;
  }
+
+.features-container {
+    margin-top: 16rem;
+}
+
+.features {
+    display: flex;
+    gap: 3rem;
+}
+ .feature-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 33%;
+}
+
+ .feature-img-box {
+    border-radius: 50%;
+    max-width: 20.2rem;
+    max-height: 20.2rem;
+    margin: auto;
+
+}
+
+.feature-img-bg {
+    width: 20.2rem;
+    height: 20.2rem;
+    background-color: var(--main);
+    opacity: 20%; 
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.footer-container {
+    color: var(--accent3);
+    margin-top: 16rem;
+}
+
+.footer-container h3{
+    font-size: 4rem;
+    line-height: 4rem;
+    
+}
+
+.footer-top-tab-container {
+    transform: translateY(25%);
+}
+
+.footer-top-tab {
+    background-color:var(--main);
+    border-radius: 1rem;
+    display: flex;
+    padding: 4rem 9rem;
+    position: relative;
+}
+
+.footer-top-tab-overlay {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: 30%;
+}
+
+.tab-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-col {
+    width: 50%;
+    margin: auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tab-col p, .tab-col h3 {
+    margin: 1rem;
+}
+
+.footer {
+    height: 393px;
+    margin: 0 !important;
+    background-color: var(--accent1);
+}
+
+
 
 
 

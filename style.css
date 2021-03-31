@@ -102,7 +102,7 @@ button {
 
 .bnr-img {
     position: absolute;
-    width: 35%;
+    width: 23%;
     bottom: 0;
     right: 0;
 }
@@ -116,6 +116,7 @@ button {
 
 .services {
     display: flex;
+    justify-content: center;
     margin-top: 16rem;
     gap: 3rem;
 }
@@ -262,7 +263,7 @@ button {
     background-color:var(--main);
     border-radius: 1rem;
     display: flex;
-    padding: 4rem 9rem;
+    padding: 10rem 9rem;
     position: relative;
 }
 
@@ -297,7 +298,51 @@ button {
     height: 393px;
     margin: 0 !important;
     background-color: var(--accent1);
+    color: var(--accent3);
 }
+
+
+.footer-main-container {
+    padding-top: 14rem;
+    color: var(--accent3);
+
+}
+
+.footer-menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--accent3);
+}
+
+.footer-menu a {
+    color: var(--accent3);
+}
+
+
+.footer-divider {
+    margin: 3rem auto;
+    color: var(--accent2);
+    border: none;
+    border-bottom: .01rem solid;
+}
+
+.footer-menu-row .bottom, .address, .contact {
+    color: var(--accent2);
+}
+
+.address p, .address h4, .contact h4 {
+    margin: 0;
+    line-height:2.8rem;
+}
+
+.social {
+    display: flex;
+    margin: auto 0;
+    gap: 1rem;
+}
+
+
 
 
 

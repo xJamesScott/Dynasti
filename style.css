@@ -40,6 +40,7 @@ h3 {
 }
 
 button {
+    transition: all .25s ease;
     border: none;
     border-radius: 1rem;
     width: 15.2rem;
@@ -47,10 +48,43 @@ button {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all .25s ease;
+    background-color: var(--accent1);
+    color: var(--accent3);
 }
 
 .header {
     margin-top: 6.4rem;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-item::after {
+    content: " ";
+    display: block;
+    transition: width .25s ease;
+    /* height: 10rem; */
+    width: 0;
+
+    /* border-bottom: 1px solid black; */
+
+    /* position: absolute; */
+}
+
+
+.menu-item:hover::after {
+    content: " ";
+    display: block;
+    transition: width .25s ease;
+    /* height: 10rem; */
+    width: 100%;
+    border-bottom: .1rem solid var(--accent1);
 }
 
 .section-indent {
@@ -122,12 +156,21 @@ button {
 }
 
 .service-item {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-repeat: no-repeat;
-   border-radius: 1rem;
+    transition: all .3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.service-item:hover {
+    transition: all .3s ease;
+    border: .2rem solid var(--main);
+    opacity: 75%;
+    transform: translateY(-1rem);
 }
 
 .service-item-big {
@@ -166,6 +209,10 @@ button {
     opacity: 80%;
     border-radius: 1rem;
 }
+
+/* .card-overlay:hover {
+    background-color: var(--main);
+} */
 
 .subtitle-container {
     display: flex;
@@ -340,6 +387,12 @@ button {
     display: flex;
     margin: auto 0;
     gap: 1rem;
+}
+
+.footer-cta:hover {
+    transition: all .25s ease !important;
+    background-color: var(--accent1) !important;
+    color: var(--accent3) !important;
 }
 
 

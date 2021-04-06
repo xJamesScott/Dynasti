@@ -1,0 +1,92 @@
+@import url('./style.css');
+
+:root {
+    --text-main: #333136;
+    --main: #E7816B;
+    --accent1: #1D1C1E;
+    --accent2: #979797;
+    --accent3: #FFFFFF;
+    --accent4: #f1e5e1;
+}
+
+.banner.section-indent.child-page  {
+    height: 252px;
+    text-align: center;
+}
+
+.banner-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content > * {
+    width: 70%;
+}
+
+.bnr-title {
+    margin: 0;
+}
+
+.banner-content p {
+    margin-top: 2.4rem;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    
+}
+
+.projects-section > * {
+    flex-basis: 350px;
+    flex-grow: 10;
+}
+
+.projects-container {
+    margin-top: 16rem;
+}
+
+.project-card {
+  display: flex;  
+  flex-direction: column;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  /* background-color: magenta; */
+  overflow: hidden;
+}
+
+.project-card img{
+    height: 320px;
+    width: 100%;
+}
+
+.project-text {
+    height: 128px;
+    text-align: center;
+    background-color: var(--accent4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-text > * {
+    margin: 0;
+    width: 70%;
+}
+
+.project-text h3 {
+    /* font-size: 2rem; */
+    color: var(--main);
+    letter-spacing: .5rem;
+}
+
+.project-text p {
+    margin-top: 1.6rem;
+    line-height: 2.5rem;
+}

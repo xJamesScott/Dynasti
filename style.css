@@ -188,7 +188,7 @@ button:hover {
  }
 
  #service-web-design {
-    background-image: url(/images/image-web-design-large.jpg);
+    background-image: url('/images/image-web-design-large.jpg');
  }
 
 .card-text {
@@ -253,12 +253,12 @@ button:hover {
 }
 
 #service-app-design {
-    background-image: url('/images/home/desktop/image-app-design.jpg');
+    background-image: url('./images/home/desktop/image-app-design.jpg');
     height: 308px;
  }
 
  #service-graphic-design {
-    background-image: url('/images/home/desktop/image-graphic-design.jpg');
+    background-image: url('./images/home/desktop/image-graphic-design.jpg');
     height: 308px;
  }
 
@@ -398,10 +398,3 @@ button:hover {
     background-color: var(--accent1) !important;
     color: var(--accent3) !important;
 }
-
-
-
-
-
-
-

@@ -46,8 +46,15 @@
     flex-grow: 0;
 }
 
+.group-2 {
+    justify-content: flex-start;
+}
+
 .projects-container {
     margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .project-card {
@@ -78,7 +85,7 @@
 
 .project-text > * {
     margin: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .project-text h3 {
@@ -90,4 +97,9 @@
 .project-text p {
     margin-top: 1.6rem;
     line-height: 2.5rem;
+}
+
+.small-service-container {
+    display: flex;
+    flex-direction: row;
 }

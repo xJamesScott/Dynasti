@@ -63,9 +63,21 @@
     flex: 0 1 350px;
     
 } */
+.projects-section > * {
+    flex-basis: 350px;
+    flex-grow: 10;
+    flex-grow: 0;
+}
+
+.group-2 {
+    justify-content: flex-start;
+}
 
 .projects-container {
     margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .project-card {
@@ -101,7 +113,7 @@
 
 .project-text > * {
     margin: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .project-text h3 {
@@ -125,4 +137,6 @@
     height: 308px;
     width: 541px;
     /* display: none !important; */
+    display: flex;
+    flex-direction: row;
 }

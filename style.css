@@ -19,10 +19,20 @@ html, body {
     font-family: 'Jost', sans-serif;
     font-size: 10px;
     color: var(--text-main);
+    animation: fadein .25s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 body {
     font-size: 1.6rem; 
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {

@@ -165,6 +165,8 @@ button:hover {
 .services {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
+    /* margin: 0; */
     margin-top: 16rem;
     gap: 3rem;
 }
@@ -178,6 +180,7 @@ button:hover {
     background-repeat: no-repeat;
     border-radius: 1rem;
     cursor: pointer;
+    flex: 0 0 541px;
 }
 
 .service-item:hover {
@@ -193,7 +196,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 640px;
-    width: 541px;
+    /* width: 541px; */
+    /* flex: 1 1 auto; */
     background-repeat: no-repeat;
  }
 
@@ -255,12 +259,25 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
+    /* width: 100%; */
 }
 
-.service-item + .sm {
+.service-item .sm {
+    /* height: 308px;
+    flex: 1 1 308px; */
+}
+
+.service-item-small {
     height: 308px;
+    /* width: 541px; */
+    /* flex: 1 1 auto; */
+    /* flex: 0 0 50%; */
+    /* max-width: 541px; */
+    flex: 0 0 308px;
     width: 541px;
 }
+
 
 #service-app-design {
     background-image: url('/images/home/desktop/image-app-design.jpg');
@@ -271,6 +288,7 @@ button:hover {
     background-image: url('/images/home/desktop/image-graphic-design.jpg');
     height: 308px;
  }
+
 
 .features-container {
     margin-top: 16rem;

@@ -7,6 +7,7 @@
     --accent2: #979797;
     --accent3: #FFFFFF;
     --accent4: #f1e5e1;
+    --acent5: #FDF3F0;
 }
 
 .banner.section-indent.child-page  {
@@ -142,3 +143,101 @@
     /* width: 541px; */
     flex: 0 0 541px;
 }
+
+/* About Us Page */
+
+.about-us.split-card-section {
+    margin-top: 6.4rem;
+}
+
+
+.split-card-section {
+    display: flex;
+}
+
+.split-card-content {
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 480px;
+}
+
+.split-text-wrapper {
+    display: flex;
+    background-color: var(--main);
+    position: relative;
+    color: var(--accent3);
+}
+
+.split-text-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    /* width: 60%; */
+    /* height: 100%; */
+    opacity: 40%;
+}
+
+.split-text {
+    flex: 1 0 58%;
+    margin: auto 15%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-us .split-img {
+    background: url('./images/about/desktop/image-about-hero.jpg');
+    /* height: 20px; */
+    width: 100%;
+    /* background-color: magenta; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 0 0 43%;
+}
+
+/* Talent Card */
+
+.talent.split-card-section {
+    margin-top: 16rem;
+}
+
+.talent .split-card-content {
+    height: 650px;
+}
+
+.talent .split-text-wrapper {
+    background-color: var(--acent5);
+}
+
+.talent h2 {
+    color: var(--main)
+}
+
+.talent p {
+    color: var(--text-main);
+}
+
+.talent img {
+    opacity: 90%;
+    left: 0;
+}
+
+.talent .split-img {
+    background: url('./images/about/desktop/image-world-class-talent.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* flex: 0 0 476px; */
+}
+
+.real .split-img {
+    background: url('./images/about/desktop/image-real-deal.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* flex: 0 0 476px; */
+}
+
+

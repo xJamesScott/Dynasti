@@ -189,9 +189,7 @@
 
 .about-us .split-img {
     background: url('./images/about/desktop/image-about-hero.jpg');
-    /* height: 20px; */
     width: 100%;
-    /* background-color: magenta; */
     background-size: cover;
     background-repeat: no-repeat;
     flex: 0 0 43%;
@@ -229,7 +227,6 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    /* flex: 0 0 476px; */
 }
 
 .real .split-img {
@@ -237,7 +234,6 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    /* flex: 0 0 476px; */
 }
 
 

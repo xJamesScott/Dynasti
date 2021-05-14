@@ -366,3 +366,93 @@ button.location {
     margin: 0;
     color: var(--accent1);
 }
+
+/* CONTACT US PAGE */
+
+.contact-us.split-card-section {
+    background-color: var(--main);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-us.split-card-content {
+    margin: 0 9.5rem;
+    align-items: center;
+    gap: 15rem;
+}
+
+.contact-us-circle.split-text-img {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    /* width: 60%; */
+    /* height: 100%; */
+    opacity: 40%;
+}
+
+
+.contact-us.split-text-wrapper {
+    background-color: transparent;
+}
+
+.contact-us .split-text {
+    margin: 0;
+}
+.contact-form {
+    color: var(--accent3);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > * {
+    background-color: transparent;
+    border: none;
+    color: var(--accent3);
+    border-bottom: 1px solid;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.your-message {
+    resize: none;
+}
+
+.contact-submit {
+    color:var(--text-main);
+    border: none;
+    background-color: var(--accent3);
+    border-radius: 1rem;
+    width: 152px;
+    height: 56px;
+}
+
+.name, .email, .phone {
+    height: 3.8rem;
+
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.contact-submit {
+    margin-top: 1rem;
+    align-self: flex-end;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+.split-title.contact-us {
+    margin-bottom: 1.5rem;
+}
+
+.contact-us .footer-top-tab-container {
+    display: none;
+}

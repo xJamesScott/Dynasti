@@ -31,6 +31,10 @@ body {
     font-size: 1.6rem; 
 }
 
+input, textarea { 
+    font-family: 'Jost', sans-serif; 
+}
+
 a {
     text-decoration: none;
 }
@@ -448,4 +452,8 @@ button:hover {
     transition: all .25s ease !important;
     background-color: var(--accent1) !important;
     color: var(--accent3) !important;
+}
+
+.tab-cta {
+    z-index: 10;
 }

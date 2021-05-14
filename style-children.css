@@ -8,6 +8,7 @@
     --accent3: #FFFFFF;
     --accent4: #f1e5e1;
     --acent5: #FDF3F0;
+    --gradient1: linear-gradient(90deg, rgba(93,29,2,0.017897091722595126) 0%, rgba(93,2,2,0.08277404921700227) 100%);
 }
 
 .banner.section-indent.child-page  {
@@ -280,3 +281,27 @@
 }
 
 
+.locations .features {
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.locations .feature-box {
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 300px;
+}
+
+button.location {
+    background-color: var(--main);
+    color: var(--accent4);
+    text-align: center;
+}
+
+.locations .feature-img-box {
+     background: var(--gradient1);
+}
+
+.locations .feature-img-bg {
+    background-color: transparent;  
+}

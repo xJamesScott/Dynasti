@@ -305,3 +305,64 @@ button.location {
 .locations .feature-img-bg {
     background-color: transparent;  
 }
+
+/* LOCATIONS PAGE */
+
+
+.locations-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+}
+.location-row {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    height: 326px;
+    
+}
+
+.location-row > * {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.location-text-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--acent5);
+    flex: 0 1 1500px;
+    position: relative;
+
+}
+
+.location-text {
+    margin-left: 5%;
+}
+
+.location-text h2 {
+    color: var(--main);
+    margin-bottom: 2rem;
+}
+
+.location-circles {
+    position: absolute;
+    bottom: 0;
+}
+
+.location-info {
+    display: flex;
+    color: var(--accent1);
+    gap: 4rem;
+}
+
+.location-info > *{
+    line-height: 2.6rem;
+    margin: 0;
+}
+
+.location-info h3, .location-info p {
+    margin: 0;
+    color: var(--accent1);
+}

@@ -2,6 +2,7 @@ const header = `
 
 <body>
 
+   
     <div class="header">
         <div class="header-container section-indent">
             <a href="/" class="logo-container"><img src="./patterns-icons/logo.svg" alt=""></a>
@@ -12,6 +13,28 @@ const header = `
             </div>
         </div>
     </div>
+    <div class="mobile-menu">
+        <div class="m-button-conatiner section-indent">
+            <a href="/" class="logo-container"><img src="./patterns-icons/logo.svg" alt=""></a>
+            <svg class="menu-button" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group">
+                    <rect id="Rectangle" width="24" height="4" fill="#1D1C1E" />
+                    <rect id="Rectangle Copy" y="8" width="24" height="4" fill="#1D1C1E" />
+                    <rect id="Rectangle Copy 2" y="16" width="24" height="4" fill="#1D1C1E" />
+                </g>
+            </svg>
+        </div>
+        <div class="menu-modal">
+            <div class="modal-text section-indent">
+             <a href="/about.html" class="m-link"><h3 class="m-link">OUT COMPANY</h3></a>
+             <a href="/locations.html" class="m-link"><h3 class="m-link">LOCATIONS</h3></a>
+             <a href="/contact.html" class="m-link"><h3 class="m-link">CONTACT</h3></a>
+            </div>
+            <div class="modal-bg"></div>
+            
+        </div>
+    </div>
+    
 
     `
     document.getElementById("e-header").innerHTML = header;
@@ -69,7 +92,10 @@ const header = `
                 </div>
             </div>
         </div>
+        
     </div>
+    
 </body>
+
 `
 document.getElementById("e-footer").innerHTML = footer;

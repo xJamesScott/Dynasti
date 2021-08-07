@@ -87,10 +87,18 @@ button:hover {
     color: var(--accent3);
 }
 
+
+
 .header {
     margin-top: 6.4rem;
 }
 
+/* a {
+    cursor: pointer;
+}
+.logo-container {
+    cursor: pointer;
+} */
 .menu-container {
     position: relative;
 }
@@ -190,6 +198,11 @@ button:hover {
     /* margin: 0; */
     margin-top: 16rem;
     gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.services>* {
+    flex: 1 1 50%;
 }
 
 .service-item {
@@ -281,6 +294,8 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    align-items: center;
+    gap: 3rem;
     /* width: 100%; */
 }
 
@@ -367,8 +382,15 @@ button:hover {
     background-color: var(--main);
     border-radius: 1rem;
     display: flex;
+    flex-wrap: wrap;
     padding: 10rem 9rem;
     position: relative;
+    gap: 1rem;
+}
+
+.footer-top-tab>* {
+    flex: 1 1 49%;
+    margin: auto;
 }
 
 .footer-top-tab-overlay {
@@ -400,7 +422,7 @@ button:hover {
 }
 
 .footer {
-    height: 393px;
+    /* height: 393px; */
     margin: 0 !important;
     background-color: var(--accent1);
     color: var(--accent3);
@@ -409,6 +431,7 @@ button:hover {
 
 .footer-main-container {
     padding-top: 14rem;
+
     color: var(--accent3);
 
 }
@@ -445,6 +468,17 @@ button:hover {
     color: var(--accent2);
     border: none;
     border-bottom: .01rem solid;
+}
+
+.footer-menu-row.bottom {
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-menu-row.bottom > *{
+    flex: 1 1 31%;
+
 }
 
 .footer-menu-row .bottom,
@@ -484,6 +518,7 @@ button:hover {
     top: 0;
     width: 100%;
     z-index: 1;
+    visibility: hidden;
 }
 
 .mobile-menu>* {
@@ -507,7 +542,7 @@ button:hover {
 
 }
 
-.modal-bg {
+.active .modal-bg {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -591,7 +626,37 @@ button:hover {
         right: initial;
         bottom: -15%;
     }
+
+    .services>* {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service-item,
+    .sm.service-item-small {
+        height: 200px !important;
+        flex: 1 1 100%;
+    }
+
+    #service-web-design {
+        background-image: url('./images/web-design-tablet.jpg');
+    }
+
+    #service-app-design {
+        background-image: url('./images/app-design-tablet.jpg');
+    }
+
+    #service-graphic-design {
+        background-image: url('./images/graphic-design-tablet.jpg');
+    }
+
+    .footer-menu-row {
+        margin-top: 2rem;
+    }
 }
+
+
+
 
 
 /* TABLET */
@@ -616,18 +681,35 @@ button:hover {
         bottom: -15%;
     }
 
+    .footer {
+        height: 423px;
+    }
+    
+    .footer-menu-row {
+        margin-top: 2rem;
+    }
+
 }
 
 /* PHONE */
 
 
 @media screen and (max-width: 767px) {
+
+    .mobile-menu {
+        visibility: visible;
+    }
+
     .header {
         display: none;
     }
 
     .content {
         padding-top: 10rem;
+    }
+
+    .mobile-bnr {
+        background: white;
     }
 
     .m-button-conatiner {
@@ -638,7 +720,7 @@ button:hover {
         /* margin: auto; */
         height: 9.6rem;
         z-index: 2;
-        background: white;
+
     }
 
     .menu-modal.active {
@@ -667,6 +749,49 @@ button:hover {
     .bnr-subtitle {
         font-size: 1.5rem;
 
+    }
+
+    .services { 
+        /* margin: auto; */
+    }
+    
+    .services > * {
+        flex: 1 1 100%;
+        width: 80%;
+
+       
+    }
+
+    .footer {
+        height: 1005px;
+        display: flex;
+        
+    }
+
+    .footer-top-tab {
+        text-align: center;
+    }
+
+    .footer-main-container.section-indent * {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .social {
+        flex-direction: row !important;
+        margin: 3rem auto;
+    }
+    
+    .footer-menu-row {
+        margin-top: 2rem;
+    }
+
+    
+
+    .tab-cta.tab-col {
+        justify-content: center;
     }
 
 

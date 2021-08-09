@@ -8,10 +8,10 @@
     --accent3: #FFFFFF;
     --accent4: #f1e5e1;
     --acent5: #FDF3F0;
-    --gradient1: linear-gradient(90deg, rgba(93,29,2,0.017897091722595126) 0%, rgba(93,2,2,0.08277404921700227) 100%);
+    --gradient1: linear-gradient(90deg, rgba(93, 29, 2, 0.017897091722595126) 0%, rgba(93, 2, 2, 0.08277404921700227) 100%);
 }
 
-.banner.section-indent.child-page  {
+.banner.section-indent.child-page {
     height: 252px;
     text-align: center;
 }
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.banner-content > * {
+.banner-content>* {
     width: 70%;
 }
 
@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
 }
+
 .bnr-title {
     margin: 0;
 }
@@ -50,9 +51,9 @@
     flex-wrap: wrap;
     /* justify-content: space-between; */
     justify-content: center;
-    gap: 5%;
+    /* gap: 5%; */
     margin: auto;
-    
+
 }
 
 .projects-section::after {
@@ -67,7 +68,7 @@
     margin: auto;
     /* flex-wrap: wrap;
     gap: 3rem; */
-    
+
 }
 
 .project-cards-container {
@@ -76,8 +77,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;  
-    
+    gap: 1rem;
+
 }
 
 /* .project-cards-container::after {
@@ -87,7 +88,7 @@
     
 } */
 
-.projects-section > * {
+.projects-section>* {
     /* flex-basis: 350px; */
     /* flex-grow: 10; */
     /* flex-grow: 0; */
@@ -100,7 +101,7 @@
 
 .projects-container {
     margin: 0;
-    
+
     margin-top: 16rem;
     display: flex;
     flex-direction: column;
@@ -116,23 +117,23 @@
 }
 
 .project-card {
-  display: flex;  
-  flex-direction: column;
-  border-radius: 2rem;
-  justify-content: center;
-  /* justify-content: space-between; */
-  align-items: center;
-  /* background-color: magenta; */
-  /* flex: auto; */
-  flex: 0 1 350px;
-  overflow: hidden;
-  max-width: 350px;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  flex: 1 0 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: magenta; */
+    /* flex: auto; */
+    flex: 0 1 350px;
+    overflow: hidden;
+    max-width: 350px;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    flex: 1 0 350px;
 }
 
-.project-card img{
+.project-card img {
     height: 320px;
     width: 100%;
     border: none;
@@ -149,7 +150,7 @@
     justify-content: center;
 }
 
-.project-text > * {
+.project-text>* {
     margin: 0;
     width: 80%;
 }
@@ -228,7 +229,7 @@
     margin: auto 15%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .about-us .split-img {
@@ -299,11 +300,11 @@ button.location {
 }
 
 .locations .feature-img-box {
-     background: var(--gradient1);
+    background: var(--gradient1);
 }
 
 .locations .feature-img-bg {
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 /* LOCATIONS PAGE */
@@ -315,15 +316,16 @@ button.location {
     gap: 3.2rem;
     margin-top: 6.4rem;
 }
+
 .location-row {
     display: flex;
     gap: 3rem;
     justify-content: center;
     height: 326px;
-    
+
 }
 
-.location-row > * {
+.location-row>* {
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -357,12 +359,13 @@ button.location {
     gap: 4rem;
 }
 
-.location-info > *{
+.location-info>* {
     line-height: 2.6rem;
     margin: 0;
 }
 
-.location-info h3, .location-info p {
+.location-info h3,
+.location-info p {
     margin: 0;
     color: var(--accent1);
 }
@@ -400,6 +403,7 @@ button.location {
 .contact-us .split-text {
     margin: 0;
 }
+
 .contact-form {
     color: var(--accent3);
     background-color: transparent;
@@ -407,7 +411,7 @@ button.location {
     flex-direction: column;
 }
 
-.contact-form > * {
+.contact-form>*  {
     background-color: transparent;
     border: none;
     color: var(--accent3);
@@ -418,6 +422,10 @@ button.location {
     justify-content: center;
 }
 
+.input::placeholder {
+    color: var(--accent3);
+}
+
 
 
 .your-message {
@@ -425,7 +433,7 @@ button.location {
 }
 
 .contact-submit {
-    color:var(--text-main);
+    color: var(--text-main);
     border: none;
     background-color: var(--accent3);
     border-radius: 1rem;
@@ -433,12 +441,15 @@ button.location {
     height: 56px;
 }
 
-.name, .email, .phone {
+.name,
+.email,
+.phone {
     height: 3.8rem;
 
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -455,4 +466,208 @@ input:focus, textarea:focus {
 
 .contact-us .footer-top-tab-container {
     display: none;
+}
+
+/* .input::placeholder {
+    color: magenta;
+} */
+
+/*  RESPONSIVE MEDIA QUERIES */
+
+/* DESKTOP SMALL */
+
+@media screen and (max-width: 1100px) {
+    .locations-section {
+        gap: 12rem;
+    }
+    
+    .location-row {
+        flex-direction: column-reverse;
+        height: 683px;
+    }
+
+    .location-row.aus {
+        flex-direction: column;
+    }
+
+    .location-text-wrapper {
+        flex: auto;
+    }
+
+    .location-circles {
+        height: 100%;
+    }
+
+    .location-row > * {
+        display: flex;
+        flex: 1 0 326px;
+    }
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    .split-card-section {
+        /* height: 632px;
+        flex: 1; */
+    }
+
+    .split-card-content{
+        min-height: 632px;
+        flex-direction: column-reverse;
+    }
+
+    .split-card-content.talent {
+        flex-direction: column;
+        min-height: 736px;
+    }
+
+    .split-card-content.real.section-indent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+  
+
+    .about-us .split-img {
+        background: url('./images/about/tablet/image-about-hero.jpg');
+        /* background: blue; */
+        /* width: 20px;
+        height: 250px; */
+        background-size: auto, auto;
+        background-repeat: no-repeat;
+        flex: 0 1 320px;
+
+    }
+
+    .talent .split-img {
+        background: url('./images/about/tablet/image-world-class-talent.jpg');
+        background-size: fill;
+        background-repeat: no-repeat;
+        flex: 0 1 320px;
+    }
+
+    .real .split-img {
+        background: url('./images/about/tablet/image-real-deal.jpg');
+        width: 100%;
+        background-size: auto, auto;
+        background-repeat: no-repeat;
+    }
+
+    /* .split-card-content.about-us>*,
+    .split-card-content.talent>*,
+    .split-card-content.talent.real>* {
+       
+    } */
+
+    .split-text {
+        flex: auto;
+        text-align: center;
+        margin: 6.4rem 10%;
+    }
+
+    .split-title {
+        margin-bottom: 3.2rem;
+        margin-top: 0;
+    }
+
+    .split-sub-title {
+        margin: 0;
+    }
+
+    .split-card-content {
+        height: 715px;
+    }
+
+    .split-card-content.talent {
+        flex-direction: column;
+        height: auto;
+        min-height: 865px;
+       
+    }
+
+    .split-card-section.contact-us {
+        flex-direction: column-reverse;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 0 auto !important;
+        gap: 0;
+        height: auto !important;
+        
+    }
+
+    .split-card-content.about-us.contact-us {
+        flex-direction: column;  
+        flex: 0 1 0 !important;
+        justify-content: center;
+        width: 86%;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    
+    .split-card-content.about-us.contact-us > * {
+        flex-direction: column;  
+        flex: 0 1 0 !important;
+        justify-content: center;
+    }
+
+    .contact-form {
+        margin: auto;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    
+
+    .contact-submit {
+        margin: auto;
+        margin-top: 4rem;
+    }
+}
+
+/* PHONE */
+
+@media screen and (max-width: 767px) {
+    .features-container.locations {
+        margin-bottom: 12rem;
+    }
+    
+    .split-card-content > * {
+        flex: 1 0 320px !important;
+        /* height: 320px; */
+    }
+
+    .split-img {
+        background-size: cover !important;
+    }
+
+    .split-title {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+
+    
+    .contact-us.split-card-content {
+        margin: 0 9.5rem;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+
+
+    .footer-container {
+        margin-top: 0;
+    }
+    
+    
+
+    .split-img {
+        background-position: 50% !important;
+    }
+
 }

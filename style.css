@@ -128,6 +128,7 @@ button:hover {
 .section-indent {
     width: 80%;
     margin: auto;
+    max-width: 1200px;
 }
 
 .header-container {
@@ -202,7 +203,7 @@ button:hover {
 }
 
 .services>* {
-    flex: 1 1 50%;
+    flex: 1 2 32%;
 }
 
 .service-item {
@@ -296,7 +297,16 @@ button:hover {
     margin: 0;
     align-items: center;
     gap: 3rem;
-    /* width: 100%; */
+    align-items: flex-end;
+}
+
+.small-service-container.child-pg {
+    flex: auto;
+    justify-content: center;
+}
+
+.small-service-container a, .service-graphic-design a {
+    width: 100%;
 }
 
 .service-item .sm {
@@ -422,7 +432,7 @@ button:hover {
 }
 
 .footer {
-    /* height: 393px; */
+    height: 393px;
     margin: 0 !important;
     background-color: var(--accent1);
     color: var(--accent3);
@@ -498,6 +508,7 @@ button:hover {
     display: flex;
     margin: auto 0;
     gap: 1rem;
+    justify-content: flex-end;
 }
 
 .footer-cta:hover {
@@ -527,7 +538,6 @@ button:hover {
 
 .m-button-conatiner {
     display: none;
-    /* width: 90%; */
     margin: 3.5rem auto;
 
 }
@@ -539,7 +549,6 @@ button:hover {
     transition: opacity .25s ease;
     opacity: 0;
     visibility: hidden;
-
 }
 
 .active .modal-bg {
@@ -575,17 +584,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* body{
-    padding-top: 10rem !important;
-} */
-
-
-
-
-
-
 /*  RESPONSIVE MEDIA QUERIES */
-
 
 /* DESKTOP SMALL */
 
@@ -655,13 +654,7 @@ button:hover {
     }
 }
 
-
-
-
-
 /* TABLET */
-
-
 
 @media screen and (max-width: 1024px) {
     .bnr-content {
@@ -681,6 +674,10 @@ button:hover {
         bottom: -15%;
     }
 
+    .footer-menu-row.bottom > * {
+        flex: 1 1 15%;
+    }
+
     .footer {
         height: 423px;
     }
@@ -693,9 +690,12 @@ button:hover {
 
 /* PHONE */
 
-
 @media screen and (max-width: 767px) {
 
+    .section-indent {
+        width: 88%;
+    }
+    
     .mobile-menu {
         visibility: visible;
     }
@@ -705,7 +705,7 @@ button:hover {
     }
 
     .content {
-        padding-top: 10rem;
+        padding-top: 20rem;
     }
 
     .mobile-bnr {
@@ -716,8 +716,6 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        /* margin: auto; */
         height: 9.6rem;
         z-index: 2;
 
@@ -728,8 +726,6 @@ button:hover {
         visibility: visible;
         transition: opacity .25s ease;
     }
-
-
 
     .bnr-content {
         margin: 0;
@@ -743,7 +739,6 @@ button:hover {
         font-size: 3.2rem;
         line-height: 3.2rem;
         margin-bottom: 2rem;
-
     }
 
     .bnr-subtitle {
@@ -751,25 +746,31 @@ button:hover {
 
     }
 
-    .services { 
-        /* margin: auto; */
-    }
-    
     .services > * {
         flex: 1 1 100%;
         width: 80%;
-
-       
     }
 
     .footer {
         height: 1005px;
         display: flex;
-        
     }
 
     .footer-top-tab {
         text-align: center;
+        padding: 2.4rem;
+        min-height: 379px;
+        gap: 3rem;
+    }
+
+    .tab-title {
+        font-size: 3.2rem !important;
+        line-height: 3.6rem;
+        margin: 6.4rem 3rem;
+    }
+
+    .footer-top-tab-container {
+        transform: translateY(50%);
     }
 
     .footer-main-container.section-indent * {
@@ -788,12 +789,7 @@ button:hover {
         margin-top: 2rem;
     }
 
-    
-
     .tab-cta.tab-col {
         justify-content: center;
     }
-
-
-
 }
